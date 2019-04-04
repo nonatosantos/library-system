@@ -1,4 +1,4 @@
-package br.com.nonatosantos.library.domain;
+package br.com.nonatosantos.library.domain.book;
 
 import br.com.nonatosantos.library.domain.enums.Availability;
 
@@ -12,8 +12,6 @@ public class Book {
 	private Author author;
 	private Integer yearPublication;
 	private Availability availability;
-	
-	
 
 	public Book(String title, String synopsis, Integer numberOfPages, PublishingCompany publishingCompany, Genre genre,
 			Author author, Integer yearPublication, Availability availability) {
@@ -90,6 +88,10 @@ public class Book {
 
 	public void setAvailability(Availability availability) {
 		this.availability = availability;
+	}
+
+	public Boolean isAvailable() {
+		return this.availability == Availability.Disponivel;
 	}
 
 	@Override

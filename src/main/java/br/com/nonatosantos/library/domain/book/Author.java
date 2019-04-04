@@ -1,12 +1,10 @@
-package br.com.nonatosantos.library.domain;
+package br.com.nonatosantos.library.domain.book;
 
-public class Genre {
+public class Author {
 
 	private String name;
-	
-	
 
-	public Genre(String name) {
+	public Author(String name) {
 		super();
 		this.name = name;
 	}
@@ -21,7 +19,7 @@ public class Genre {
 
 	@Override
 	public String toString() {
-		return "Genre [name=" + name + "]";
+		return "Author [name=" + name + "]";
 	}
 
 }
