@@ -1,6 +1,6 @@
 package br.com.nonatosantos.library.domain.book;
 
-import br.com.nonatosantos.library.domain.enums.Availability;
+import br.com.nonatosantos.library.domain.book.enums.Availability;
 
 public class Book {
 
@@ -99,6 +99,70 @@ public class Book {
 		return "Book [title=" + title + ", synopsis=" + synopsis + ", numberOfPages=" + numberOfPages
 				+ ", publishingCompany=" + publishingCompany + ", genre=" + genre + ", author=" + author
 				+ ", yearPublication=" + yearPublication + ", availability=" + availability + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((author == null) ? 0 : author.hashCode());
+		result = prime * result + ((availability == null) ? 0 : availability.hashCode());
+		result = prime * result + ((genre == null) ? 0 : genre.hashCode());
+		result = prime * result + ((numberOfPages == null) ? 0 : numberOfPages.hashCode());
+		result = prime * result + ((publishingCompany == null) ? 0 : publishingCompany.hashCode());
+		result = prime * result + ((synopsis == null) ? 0 : synopsis.hashCode());
+		result = prime * result + ((title == null) ? 0 : title.hashCode());
+		result = prime * result + ((yearPublication == null) ? 0 : yearPublication.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Book other = (Book) obj;
+		if (author == null) {
+			if (other.author != null)
+				return false;
+		} else if (!author.equals(other.author))
+			return false;
+		if (availability != other.availability)
+			return false;
+		if (genre == null) {
+			if (other.genre != null)
+				return false;
+		} else if (!genre.equals(other.genre))
+			return false;
+		if (numberOfPages == null) {
+			if (other.numberOfPages != null)
+				return false;
+		} else if (!numberOfPages.equals(other.numberOfPages))
+			return false;
+		if (publishingCompany == null) {
+			if (other.publishingCompany != null)
+				return false;
+		} else if (!publishingCompany.equals(other.publishingCompany))
+			return false;
+		if (synopsis == null) {
+			if (other.synopsis != null)
+				return false;
+		} else if (!synopsis.equals(other.synopsis))
+			return false;
+		if (title == null) {
+			if (other.title != null)
+				return false;
+		} else if (!title.equals(other.title))
+			return false;
+		if (yearPublication == null) {
+			if (other.yearPublication != null)
+				return false;
+		} else if (!yearPublication.equals(other.yearPublication))
+			return false;
+		return true;
 	}
 
 }

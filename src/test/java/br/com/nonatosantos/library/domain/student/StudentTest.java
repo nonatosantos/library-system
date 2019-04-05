@@ -2,13 +2,12 @@ package br.com.nonatosantos.library.domain.student;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import br.com.nonatosantos.library.domain.student.enums.StudentStatus;
+import br.com.nonatosantos.library.ModelBuilderTest;
 
 public class StudentTest {
 
@@ -16,8 +15,8 @@ public class StudentTest {
 
 	@Before
 	public void newStudent() {
-		this.student = new Student("Nonato Santos", "nonatosantos1986@gmail.com", "(44)99116-5339",
-				new Address("87033030", "Diogo Zuliani", 515, "A", "Maringá", "PR"), StudentStatus.Ativo);
+
+		this.student = ModelBuilderTest.newStudent();
 	}
 
 	@Test
@@ -41,9 +40,10 @@ public class StudentTest {
 
 	@Test
 	public void testTelephone() {
-		assertFalse(student.getTelephone().isEmpty());
-		assertEquals("(44)99116-5339", student.getTelephone());
-		assertNotEquals("44991165339", student.getTelephone());
+		assertFalse(student.getTelephones().isEmpty());
+		assertTrue(student.getTelephones().size() == 2);
+		assertFalse(student.getTelephones().size() == 1);
+
 	}
 
 	@Test
