@@ -1,10 +1,10 @@
-package br.com.nonatosantos.library.domain.book;
+package br.com.nonatosantos.library.domain.books;
 
-public class Genre {
+public class PublishingCompany {
 
 	private String name;
 
-	public Genre(String name) {
+	public PublishingCompany(String name) {
 		super();
 		this.name = name;
 	}
@@ -19,7 +19,7 @@ public class Genre {
 
 	@Override
 	public String toString() {
-		return "Genre [name=" + name + "]";
+		return "PublishingCompany [name=" + name + "]";
 	}
 
 	@Override
@@ -38,7 +38,7 @@ public class Genre {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Genre other = (Genre) obj;
+		PublishingCompany other = (PublishingCompany) obj;
 		if (name == null) {
 			if (other.name != null)
 				return false;

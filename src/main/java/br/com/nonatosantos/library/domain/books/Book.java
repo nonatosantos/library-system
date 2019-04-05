@@ -1,4 +1,4 @@
-package br.com.nonatosantos.library.domain.book;
+package br.com.nonatosantos.library.domain.books;
 
 import br.com.nonatosantos.library.domain.book.enums.Availability;
 

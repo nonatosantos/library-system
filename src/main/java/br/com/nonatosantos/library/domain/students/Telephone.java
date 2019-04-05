@@ -1,4 +1,4 @@
-package br.com.nonatosantos.library.domain.student;
+package br.com.nonatosantos.library.domain.students;
 
 public class Telephone {
 	

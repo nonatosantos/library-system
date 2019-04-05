@@ -1,8 +1,8 @@
-package br.com.nonatosantos.library.operations;
+package br.com.nonatosantos.library.domain.operations;
 
-import br.com.nonatosantos.library.domain.book.Book;
 import br.com.nonatosantos.library.domain.book.enums.Availability;
-import br.com.nonatosantos.library.domain.student.Student;
+import br.com.nonatosantos.library.domain.books.Book;
+import br.com.nonatosantos.library.domain.students.Student;
 
 public class Donation extends Operation {
 

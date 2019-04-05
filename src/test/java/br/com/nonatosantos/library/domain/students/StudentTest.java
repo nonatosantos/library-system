@@ -1,4 +1,4 @@
-package br.com.nonatosantos.library.domain.student;
+package br.com.nonatosantos.library.domain.students;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import br.com.nonatosantos.library.ModelBuilderTest;
+import br.com.nonatosantos.library.domain.students.Student;
 
 public class StudentTest {
 

@@ -1,4 +1,4 @@
-package br.com.nonatosantos.library.domain.student;
+package br.com.nonatosantos.library.domain.students;
 
 import java.util.List;
 

@@ -3,15 +3,15 @@ package br.com.nonatosantos.library;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.nonatosantos.library.domain.book.Author;
-import br.com.nonatosantos.library.domain.book.Book;
-import br.com.nonatosantos.library.domain.book.Genre;
-import br.com.nonatosantos.library.domain.book.PublishingCompany;
 import br.com.nonatosantos.library.domain.book.enums.Availability;
-import br.com.nonatosantos.library.domain.student.Address;
-import br.com.nonatosantos.library.domain.student.Student;
-import br.com.nonatosantos.library.domain.student.Telephone;
+import br.com.nonatosantos.library.domain.books.Author;
+import br.com.nonatosantos.library.domain.books.Book;
+import br.com.nonatosantos.library.domain.books.Genre;
+import br.com.nonatosantos.library.domain.books.PublishingCompany;
 import br.com.nonatosantos.library.domain.student.enums.StudentStatus;
+import br.com.nonatosantos.library.domain.students.Address;
+import br.com.nonatosantos.library.domain.students.Student;
+import br.com.nonatosantos.library.domain.students.Telephone;
 
 public class ModelBuilderTest {
 
